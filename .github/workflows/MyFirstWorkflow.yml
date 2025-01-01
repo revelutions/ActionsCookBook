@@ -38,7 +38,7 @@ jobs:
           sec=$(echo ${{ secrets.MY_SECRET }} | sed 's/./& /g')
           echo "Hello ${{ vars.WHO_TO_GREET}} from ${{ github.actor}}"
           echo "Sleeping"
-          sleep 10
+          sleep 12
           echo "Finished sleeping"
           echo "My secret is '$sec'"    
   Production:
