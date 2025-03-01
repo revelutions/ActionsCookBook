@@ -12,7 +12,7 @@ jobs:
           echo "Workflow triggered in branch '${{ github.ref }}'."
           echo "Workflow triggered by event '${{ github.event_name }}'."
           echo "Workflow triggered by actor '${{ github.actor }}''."
-      #- run: echo "PR title is '${{github.event.pull_request.title}}"
+      - run: echo "PR title is '${{github.event.pull_request.title}}"
       - run: |
           echo "::debug::This is a debug message."
           echo "::notice::This is a notice message."
